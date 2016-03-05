@@ -18,17 +18,23 @@ The basic ide behind ccache-like systems can be summarised by the following poin
 
 For the purpose of hashing usually MD4 is enough. The MD5 is much better for the range of possible hashing values, however, it is also more expensive when CPU load is taken into account.
 
-This particular implementation of ccache, forks and leaves a server in memory. Whenever after a new command is to be processes this command (new instance of n32_ccache) connects to this server via Windows IPC. I did for optimisation and eagerness to undertsnad Windows pecularities on IPC.
+This particular implementation of ccache, forks and leaves a server in memory. Whenever after a new command is to be processed, this command (meaning new instance of n32_ccache) connects to this server via Windows IPC. I did for optimisation and eagerness to understand Windows pecularities on IPC.
 
 ## How to use
-Under no condition this implementation should be regarded as finished or optimal. However, it works for me since early 2011.
+Here goes example command launch:
+d:\n32_ccache-IA32-i386-RELEASE.exe mingw32-gcc.exe [...] -c  time/time.c -o time/time.o
 
-### Variables used:
-N32_CCACHE_MODE [MODE_RAM, MODE_DISC]
-
+### Variables used
+Since beggining it was my intention to have two possibilities of objects storage. One of them was permament storage (MODE_DISC) and the other temporary in RAM (MODE_RAM below).
+* N32_CCACHE_MODE [MODE_RAM, MODE_DISC]
+* N32_CCACHE_DIR path to the location when stored object are kept
 
 ## Status
 Under no condition this implementation should be regarded as finished or optimal. Many constructions used, after that time, looks sometimes naive (there are far more optmial coutnerparts). Notwithstanding, it works for me since early 2011.
+
+- [x] N32_CCACHE_MODE with MODE_DISC
+- [ ] N32_CCACHE_MODE with MODE_RAM
+- [ ] Open a pull request
 
 ## Conclusions
 After those years I find this tool still useful and helping me whenever Windows C/C++ is needed. The performance iprovement for C files is not significant (if any), however, for complex C++ files with templates it does its trick.
