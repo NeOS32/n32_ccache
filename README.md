@@ -37,7 +37,7 @@ Since beggining it was my intention to have two possibilities of objects storage
 
 
 ## Status
-Under no condition this implementation should be regarded as finished or optimal. Many constructions used, after that time, looks sometimes naive (there are far more optmial coutnerparts). Notwithstanding, it works for me since early 2011.
+Under no condition this implementation should be regarded as finished or optimal. Many structures and algorithms used are not optimal (there are far more optmial counterparts). Notwithstanding, it works for me since early 2011.
 
 To do list:
 - [x] N32_CCACHE_MODE with MODE_DISC
