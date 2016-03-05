@@ -6,7 +6,7 @@ It was many years ago when I came accross ccache. It did an excelent job on my L
 
 [Original ccache](https://ccache.samba.org/ "Original ccache")
 
-## How it works?
+## How does it work?
 The basic ide behind ccache-like systems can be summarised by the following points:
 
 1. launch compilation to the intermediate code
@@ -22,12 +22,19 @@ This particular implementation of ccache, forks and leaves a server in memory. W
 
 ## How to use
 Here goes example command launch:
-d:\n32_ccache-IA32-i386-RELEASE.exe mingw32-gcc.exe [...] -c  time/time.c -o time/time.o
+```
+  d:\n32_ccache-IA32-i386-RELEASE.exe mingw32-gcc.exe [...] -c  time/time.c -o time/time.o
+```
 
 ### Variables used
 Since beggining it was my intention to have two possibilities of objects storage. One of them was permament storage (MODE_DISC) and the other temporary in RAM (MODE_RAM below).
-* N32_CCACHE_MODE [MODE_RAM, MODE_DISC]
-* N32_CCACHE_DIR path to the location when stored object are kept
+
+| Variable | Value | Description |
+| --- | --- | --- |
+| N32_CCACHE_MODE | MODE_RAM | Cached objects to be stored in RAM |
+| N32_CCACHE_MODE | MODE_DISC | Cached objects to be stored on local disc |
+| N32_CCACHE_DIR | n/a | Path to the local storage |
+
 
 ## Status
 Under no condition this implementation should be regarded as finished or optimal. Many constructions used, after that time, looks sometimes naive (there are far more optmial coutnerparts). Notwithstanding, it works for me since early 2011.
