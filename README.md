@@ -1,5 +1,5 @@
 # n32_ccache
-Compilation caching system for Windows system (ccache equivalence)
+Compilation caching system for Windows system (ccache equivalence) based on mingw32.
 
 ## Introduction
 It was many years ago when I came accross ccache. It did an excelent job on my Linux-based projects. However, many times I had to move with development to Ms Windows stations. This is how n32_ccache was born..
