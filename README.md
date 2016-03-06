@@ -48,6 +48,8 @@ To do list:
 - [x] N32_CCACHE_MODE with MODE_DISC
 - [ ] N32_CCACHE_MODE with MODE_RAM
 - [ ] statistics printing
+- [ ] support for excepions handling 
+- [ ] support for C++11
 
 ## Conclusions
 After those years I find this tool still useful and helping me whenever Windows C/C++ is needed. The performance iprovement for C files is not significant (if any), however, for complex C++ files with templates it does its trick.
