@@ -31,7 +31,7 @@ Server mode can be used with:
 n32_ccache-IA32-i386-RELEASE.exe --server
 ```
 
-### Variables used
+### Environmental variables used
 Since beggining it was my intention to have two possibilities of objects storage. One of them was permament storage (MODE_DISC) and the other temporary in RAM (MODE_RAM below).
 
 | Variable | Value | Description |
@@ -40,9 +40,10 @@ Since beggining it was my intention to have two possibilities of objects storage
 | N32_CCACHE_MODE | MODE_DISC | Cached objects to be stored on local disc |
 | N32_CCACHE_DIR | n/a | Path to the local storage |
 
-
 ## Status
 Under no condition this implementation should be regarded as finished or optimal. Many structures and algorithms used are not optimal (there are far more optmial counterparts). Notwithstanding, it works for me since early 2011.
+
+The tool was compiled with mingw32 toolset.
 
 To do list:
 - [x] N32_CCACHE_MODE with MODE_DISC
