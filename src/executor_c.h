@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2011 Sebastian Serewa <neos32.project@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #ifndef EXECUTOR_C_H
 #define EXECUTOR_C_H
 
@@ -16,7 +20,7 @@ private:
 
 public:
 	executor_c();
-	result_t	ExecuteCommand( const string & i_Command, N32_BOOL i_bInheritHandles = N32_TRUE, N32_BOOL i_bWaitForReturn = N32_TRUE ) const;
+	result_t	ExecuteCommand(const string& i_Command, N32_BOOL i_bInheritHandles = N32_TRUE, N32_BOOL i_bWaitForReturn = N32_TRUE) const;
 	virtual 	~executor_c();
 
 };

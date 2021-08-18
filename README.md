@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2011 Sebastian Serewa <neos32.project@gmail.com>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # n32_ccache
 Compilation caching system for Windows system (ccache equivalence) based on mingw32.
 

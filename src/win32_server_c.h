@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2011 Sebastian Serewa <neos32.project@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #ifndef SERVER_C_H
 #define SERVER_C_H
 

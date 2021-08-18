@@ -1,20 +1,6 @@
-/*
- * Copyright (C) 2011-2016 Sebastian Serewa
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 3 of the License, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc., 51
- * Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
- */
+// SPDX-FileCopyrightText: 2011 Sebastian Serewa <neos32.project@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
 
 /*
  * C/C++ main()
@@ -36,21 +22,21 @@
 
 using namespace std;
 
-LOCAL result_t GoModeTransparent( n32_ccache_app_c & App )
+LOCAL result_t GoModeTransparent(n32_ccache_app_c& App)
 {
-	return( 0 );
+	return(0);
 }
 
 
-int main(int argc,char* argv[])
+int main(int argc, char* argv[])
 {
 #ifdef DEBUG
-	DEBUG_SetSeverity( DEB_INFORM );
+	DEBUG_SetSeverity(DEB_INFORM);
 #endif
 
-	n32_ccache_app_c App( argc, argv );
-	
-	result_t rRet= App.StartProcessing();
+	n32_ccache_app_c App(argc, argv);
 
-	return( rRet );
+	result_t rRet = App.StartProcessing();
+
+	return(rRet);
 }

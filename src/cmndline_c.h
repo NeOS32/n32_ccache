@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2011 Sebastian Serewa <neos32.project@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 #ifndef CMND_LINE_C_H
 #define CMND_LINE_C_H
 
@@ -14,7 +18,7 @@ class cmndline_c : public string_tokenizer_c
 
 public:
 	cmndline_c();
-	cmndline_c( const string & i_FullCommandLine );
+	cmndline_c(const string& i_FullCommandLine);
 	virtual ~cmndline_c();
 
 };
